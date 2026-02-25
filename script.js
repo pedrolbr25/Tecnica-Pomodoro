@@ -34,19 +34,19 @@ musicaFocoInput.addEventListener('change', () => {
 })
 // Função para criar os elementos de tarefa
 focoBt.addEventListener('click', () => { //Botão de foco
-    tempoDecorridoEmSegundos = 300 
+    tempoDecorridoEmSegundos = 1800
     alterarContexto('foco') //altera o contexto para foco
     focoBt.classList.add('active') //adiciona a classe actove para o botão de foco
 })
 
 curtoBt.addEventListener('click', () => { // Botão de descanso curto
-    tempoDecorridoEmSegundos = 900
+    tempoDecorridoEmSegundos = 300
     alterarContexto('descanso-curto')
     curtoBt.classList.add('active')
 })
 
 longoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 15
+    tempoDecorridoEmSegundos = 900
     alterarContexto('descanso-longo')
     longoBt.classList.add('active')
 })
